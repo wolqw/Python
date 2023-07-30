@@ -28,3 +28,18 @@ for j in range(m):
         stolbov += 1
         s += cnt
 print(s - (stolbov * ctrok))
+
+
+
+n, m = map(int, input().split())
+c_n = [1] * m
+c_m = 0
+for _ in range(n):
+    s = input()
+    if 'S' in s:
+        for i in range(m):
+            if s[i] == 'S':
+                c_n[i] = 0
+    else:
+        c_m += 1
+print(c_m * m + c_n.count(1) * (n - c_m))
