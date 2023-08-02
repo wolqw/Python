@@ -1,4 +1,4 @@
-```Pyhton
+```python
 a = input()
 a = int(input())
 a = float(input())
