@@ -31,3 +31,11 @@ def validate_pin(pin):
 #or
 def validate_pin(pin):
     return len(pin) in (4, 6) and pin.isdigit()
+
+###################
+#Is this a triangle?
+def is_triangle(a, b, c):
+    if (a + b) > c and (a + c) > b and (b + c) > a and a > 0 and b > 0 and c > 0:
+        return True
+    else:
+        return False
