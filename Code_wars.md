@@ -43,3 +43,16 @@ def is_triangle(a, b, c):
 def is_triangle(a, b, c):
     a, b, c = sorted([a, b, c])
     return a + b > c
+
+#################
+#Find the odd int
+def find_it(seq):
+    if len(seq) == 1:
+        return seq[0]
+    else:
+        for i in seq:
+            if seq.count(i) % 2 != 0:
+                return i
+#or
+def find_it(seq):
+    return [x for x in seq if seq.count(x) % 2][0]
