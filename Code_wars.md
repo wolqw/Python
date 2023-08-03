@@ -12,3 +12,17 @@ def descending_order(num):
 #or
 def Descending_Order(num):
     return int("".join(sorted(str(num), reverse=True)))
+
+## Regex validate PIN code
+def validate_pin(pin):
+    
+    s = str(pin)
+    ss = list(s)
+    sss = []
+    for i in ss:
+        if i.isnumeric():
+            sss.append(i)
+    if (len(sss)) == 4 and len(ss) == 4 or (len(sss)) == 6 and len(ss) == 6:
+        return(True)
+    else:
+        return(False)
