@@ -1,4 +1,5 @@
 ```python
+#################
 #Descending Order
 
 def descending_order(num):
@@ -13,6 +14,7 @@ def descending_order(num):
 def Descending_Order(num):
     return int("".join(sorted(str(num), reverse=True)))
 
+##########################
 ## Regex validate PIN code
 def validate_pin(pin):
     
