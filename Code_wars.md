@@ -69,3 +69,7 @@ def friend(x):
 #or
 def friend(x):
     return [f for f in x if len(f) == 4]
+
+### odd or even
+def oddOrEven(arr):
+    return ('even', 'odd')[sum(arr) % 2]
