@@ -73,3 +73,14 @@ def friend(x):
 ### odd or even
 def oddOrEven(arr):
     return ('even', 'odd')[sum(arr) % 2]
+
+##Split string
+def solution(s):
+    ss = list(s)
+    a=[]
+    for i in range(0,len(ss)):
+        if i % 2 != 0:
+            a.append(ss[i-1]+ss[i])
+    if len(ss) % 2 != 0:
+        a.append(ss[-1]+'_')
+    return a
