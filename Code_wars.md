@@ -54,5 +54,18 @@ def find_it(seq):
             if seq.count(i) % 2 != 0:
                 return i
 #or
+
+###############
+#Friend or Foe
 def find_it(seq):
     return [x for x in seq if seq.count(x) % 2][0]
+
+def friend(x):
+    a=[]
+    for i in x:
+        if len(i) == 4:
+            a.append(i)
+    return a
+#or
+def friend(x):
+    return [f for f in x if len(f) == 4]
